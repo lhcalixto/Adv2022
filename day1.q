@@ -1,10 +1,13 @@
-F1:{i:0,where 0N=s:"I"$x; max e:sum@/:i _ s}
-F2:{i:0,where 0N=s:"I"$x; sum top:3#desc e:sum@/:i _ s; (first top; sum top)}
+/ Main
 
 F:{
     a:read0 x;
     F2[a]
  }
+
+F1:{i:0,where 0N=s:"I"$x; max e:sum@/:i _ s}
+
+F2:{i:0,where 0N=s:"I"$x; sum top:3#desc e:sum@/:i _ s; (first top; sum top)}
 
 "Answers:"
 F[`:input1.txt]
