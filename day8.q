@@ -26,7 +26,7 @@ F:{
     r:i[;0] f' i[;1];
     edges:-4+2*sum count@/:(a[;0];a[0;]);
     r1:edges + sum r[;0];
-    r2::max r[;1];
+    r2:max r[;1];
     (r1;r2)
  }
 
